@@ -12,7 +12,7 @@ void	print_grid(int grid[4][4])
 	char	c;
 
 	row = 0;
-	while (col < 4)
+	while (row < 4)
 	{
 		col = 0;
 		while (col < 4)

@@ -5,7 +5,7 @@ static	void	init_grid(int grid[4][4])
 	int	i;
 
 	i = 0;
-	while (1 < 16)
+	while (i < 16)
 	{
 		grid[i / 4][i % 4] = 0;
 		i++;
@@ -23,6 +23,7 @@ int main(int argc, char **argv)
 		return (1);
 	}
 	parse_clues(argv[1], clues);
+	init_grid(grid);
 	if (!solve(grid, clues, 0))
 	{
 		print_error();

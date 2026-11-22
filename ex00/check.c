@@ -22,7 +22,7 @@ int is_valid(int grid[4][4], int pos, int n)
 	int i = 0;
 	while (i < 4)
 	{
-		if (grid[pos / 4][i] == n || grid[i][pos & 4] == n)
+		if (grid[pos / 4][i] == n || grid[i][pos % 4] == n)
 			return (0);
 		i++;
 	}
